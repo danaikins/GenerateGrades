@@ -26,6 +26,16 @@
                         <p>Number of Students</p>
                         <input type="text"  value="4" class="num_students">
                     </div>
+                    <div class="tolerance">
+                        <p>Tolerance(how close the grades should be)</p>
+                        <select name="grade_tolerance" id="grade_tolerance">
+                            <option value="0.00000001" label="Very Close"></option>
+                            <option value="0.000001" label="Sorta Close"></option>
+                            <option value="0.0001" label="Less Close"></option>
+                            <option value="0.01" label="Not Close"></option>
+                            <option value="1" label="Bad Close"></option>
+                        </select>
+                    </div>
                     <br />
                     <button class="get_result" type="button">Generate Grades</button>
                 </form>

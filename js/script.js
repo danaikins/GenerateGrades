@@ -1,12 +1,12 @@
 $(document).ready(function(){
     $(".get_result").click(function(){        
-        generateGrades($(".total_points").val(), $(".num_students").val());
+        generateGrades($(".total_points").val(), $(".num_students").val(), $("#grade_tolerance").val());
     });
 });
 
-function generateGrades(totalGrade, numStudents){
+function generateGrades(totalGrade, numStudents, tolerance){
     maxGrade = totalGrade / numStudents;
-    minGrade = maxGrade - 0.0000001;
+    minGrade = maxGrade - tolerance;
 
     var grades = []
     var runningCount = 0;
