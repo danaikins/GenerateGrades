@@ -15,8 +15,7 @@ function generateGrades(totalGrade, numStudents, tolerance){
         grades.push(minGrade + (maxGrade - minGrade) * Math.random());
         runningCount += grades[i];
     }
-    grades[numStudents - 1] = totalGrade - runningCount;
-
+    grades.push(totalGrade - runningCount);
     $(".result").html("");
     for(var i = 0; i < numStudents; i++){
         $(".result").append("<p>Grade " + (i + 1) + ": " + grades[i] + "</p>");
