@@ -2,14 +2,17 @@
     border-radius: 5px;
     border: 3px solid black;
     background-color: #EFEFEF;
-    width: fit-content;
+    width: 100%;
     padding: 5px;
 }
 .result{
     border-radius: 5px;
     border: 3px solid black;
     background-color: #EFEFEF;
-    width: fit-content;
+    width: 100%;
     padding: 5px;
     margin-top: 2px;
+}
+.root{
+    width: fit-content;
 }
